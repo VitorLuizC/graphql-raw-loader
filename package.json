@@ -1,0 +1,25 @@
+{
+  "name": "graphql-raw-loader",
+  "version": "0.0.0",
+  "description": "Load GraphQL files as raw strings and handle it's import directive & comment statement.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VitorLuizC/graphql-raw-loader.git"
+  },
+  "keywords": [
+    "GraphQL",
+    "Webpack",
+    "Webpack-Loader",
+    "GraphQL-Loader"
+  ],
+  "author": "Vitor Cavalcanti",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VitorLuizC/graphql-raw-loader/issues"
+  },
+  "homepage": "https://github.com/VitorLuizC/graphql-raw-loader#readme"
+}
