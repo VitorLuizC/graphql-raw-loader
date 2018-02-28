@@ -1,6 +1,6 @@
 {
   "name": "graphql-raw-loader",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Load GraphQL files as raw strings and handle it's import directive & comment statement.",
   "main": "index.js",
   "scripts": {
