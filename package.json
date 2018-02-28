@@ -11,10 +11,11 @@
     "url": "git+https://github.com/VitorLuizC/graphql-raw-loader.git"
   },
   "keywords": [
-    "GraphQL",
-    "Webpack",
-    "Webpack-Loader",
-    "GraphQL-Loader"
+    "graphql",
+    "webpack",
+    "webpack-loader",
+    "graphql-loader",
+    "raw-loader"
   ],
   "author": {
     "url": "https://vitorluizc.github.io/",
