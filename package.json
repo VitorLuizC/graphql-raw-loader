@@ -4,7 +4,7 @@
   "description": "Load GraphQL files as raw strings and handle it's import directive & comment statement.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ava ./test/**/*.test.js"
   },
   "repository": {
     "type": "git",
@@ -26,5 +26,10 @@
   "bugs": {
     "url": "https://github.com/VitorLuizC/graphql-raw-loader/issues"
   },
-  "homepage": "https://github.com/VitorLuizC/graphql-raw-loader#readme"
+  "homepage": "https://github.com/VitorLuizC/graphql-raw-loader#readme",
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "memory-fs": "^0.4.1",
+    "webpack": "^4.0.1"
+  }
 }

@@ -1,0 +1,5 @@
+query Test () {
+  tests {
+    ...TestFragment @import(from: "./fragment.graphql")
+  }
+}

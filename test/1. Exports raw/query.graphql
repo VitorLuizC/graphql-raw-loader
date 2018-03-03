@@ -1,0 +1,5 @@
+query Test ($name: String!) {
+  tests {
+    id
+  }
+}

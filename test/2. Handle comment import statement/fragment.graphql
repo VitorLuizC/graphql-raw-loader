@@ -1,0 +1,5 @@
+# import "./type.graphql"
+
+fragment TestFragment on Test {
+  id
+}
