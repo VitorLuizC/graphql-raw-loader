@@ -70,8 +70,6 @@ Officially there's no way to import GraphQL files inside each other. Other loade
 Also, theres a [thread about implementing import statements][1] on GraphQL. One of the best suggestions is about [using a directive to import fragments][2].
 
 This loader supports both ways. :sunglasses:
-
-[GraphQL loaders parses import statement inside comments][0].
 ### Using comment import statement
 
 ```gql
@@ -101,8 +99,6 @@ query Users {
   }
 }
 ```
-
-### **This loader supports both ways!**
 
 <!-- Links -->
 [0]: https://github.com/samsarahq/graphql-loader#import-statements-in-graphql-files
