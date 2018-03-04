@@ -1,5 +1,7 @@
 # GraphQL raw loader
 
+[![Build Status][3]][4]
+
 Load GraphQL files as raw strings and handle it's import directive & comment statement.
 
 ## Installation
@@ -104,3 +106,5 @@ query Users {
 [0]: https://github.com/samsarahq/graphql-loader#import-statements-in-graphql-files
 [1]: https://github.com/facebook/graphql/issues/343
 [2]: https://github.com/facebook/graphql/issues/343#issuecomment-322622003
+[3]: https://travis-ci.org/VitorLuizC/graphql-raw-loader.svg?branch=master
+[4]: https://travis-ci.org/VitorLuizC/graphql-raw-loader
