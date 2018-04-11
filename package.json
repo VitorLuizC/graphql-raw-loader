@@ -1,8 +1,8 @@
 {
   "name": "graphql-raw-loader",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Load GraphQL files as raw strings and handle it's import directive & comment statement.",
-  "main": "index.js",
+  "main": "lib/graphql-raw-loader.js",
   "scripts": {
     "test": "ava ./test/**/*.test.js"
   },
@@ -29,7 +29,8 @@
   "homepage": "https://github.com/VitorLuizC/graphql-raw-loader#readme",
   "devDependencies": {
     "ava": "^0.25.0",
+    "bili": "^3.0.3",
     "memory-fs": "^0.4.1",
-    "webpack": "^4.0.1"
+    "webpack": "^4.1.0"
   }
 }

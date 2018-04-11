@@ -4,8 +4,7 @@ const test = require('ava')
 const escape = require('../escape')
 const compiler = require('../compiler')
 
-const content = escape(`module.exports = "
-query Test ($name: String!) {
+const content = escape(`module.exports = "query Test ($name: String!) {
   tests {
     id
   }

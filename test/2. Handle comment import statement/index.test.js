@@ -7,7 +7,6 @@ const compiler = require('../compiler')
 const source = 'module.exports = ' +
   'require(\'./fragment.graphql\') + '
   + escape(`"
-
 query Test ($name: String!) {
   tests {
     ...TestFragment
@@ -21,4 +20,5 @@ test('Handle comment import statement', async (context) => {
   const modules = stats.toJson().modules
   const output = modules[modules.length - 1].source
   context.is(output, source)
+  context.is(modules.length, 3)
 })

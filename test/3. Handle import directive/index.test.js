@@ -4,8 +4,7 @@ const test = require('ava')
 const escape = require('../escape')
 const compiler = require('../compiler')
 
-const source = 'module.exports = ' + 'require(\'./fragment.graphql\') + ' + escape(`"
-query Test () {
+const source = 'module.exports = ' + 'require(\'./fragment.graphql\') + ' + escape(`"query Test () {
   tests {
     ...TestFragment
   }
@@ -18,4 +17,5 @@ test('Handle import directive', async (context) => {
   const modules = stats.toJson().modules
   const output = modules[modules.length - 1].source
   context.is(output, source)
+  context.is(modules.length, 2)
 })
