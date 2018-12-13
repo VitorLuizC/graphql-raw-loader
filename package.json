@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "Load GraphQL files as raw strings and handle it's import directive & comment statement.",
   "main": "dist/graphql-raw-loader.cjs.js",
+  "types": "types/index.d.ts",
   "scripts": {
     "test": "ava ./test/**/*.test.js",
     "build": "bili lib/index.ts --banner --typescript2.useTsconfigDeclarationDir"
