@@ -12,8 +12,5 @@ query Test ($name: String!) {
 "`)
 
 test('Parses to raw string export', async (context) => {
-  const file = __dirname + '/query.graphql'
-  const stats = await compile(file)
-  const output = stats.toJson().modules[0].source
-  context.is(output, content)
+  context.is(await compile(__dirname + '/query.graphql'), content)
 })

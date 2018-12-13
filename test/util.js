@@ -29,11 +29,13 @@ const compile = (file) => {
   compiler.outputFileSystem = new MemoryFS();
 
   return new Promise((resolve, reject) => {
-    compiler.run((error, stats) => (
-      error
-        ? reject(error)
-        : resolve(stats)
-    ));
+    compiler.run((error, stats) => {
+      if (error)
+        return reject(error);
+      const { modules } = stats.toJson();
+      const module = modules.find((_) => file === path.resolve(__dirname, _.name));
+      resolve(module && module.source);
+    });
   });
 };
 
