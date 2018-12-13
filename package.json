@@ -2,9 +2,10 @@
   "name": "graphql-raw-loader",
   "version": "0.1.0",
   "description": "Load GraphQL files as raw strings and handle it's import directive & comment statement.",
-  "main": "index.js",
+  "main": "dist/graphql-raw-loader.cjs.js",
   "scripts": {
-    "test": "ava ./test/**/*.test.js"
+    "test": "ava ./test/**/*.test.js",
+    "build": "bili lib/index.ts --banner --typescript2.useTsconfigDeclarationDir"
   },
   "repository": {
     "type": "git",
@@ -28,8 +29,12 @@
   },
   "homepage": "https://github.com/VitorLuizC/graphql-raw-loader#readme",
   "devDependencies": {
+    "@types/webpack": "^4.4.21",
     "ava": "^0.25.0",
+    "bili": "^3.4.2",
     "memory-fs": "^0.4.1",
+    "rollup-plugin-typescript2": "^0.18.1",
+    "typescript": "^3.2.2",
     "webpack": "^4.27.1"
   }
 }
