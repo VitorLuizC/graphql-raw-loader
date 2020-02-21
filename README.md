@@ -10,7 +10,7 @@ Install it using NPM/Yarn.
 
 ```sh
 # using NPM
-npm i -D graphlq-raw-loader
+npm i -D graphql-raw-loader
 
 # using Yarn
 yarn add graphql-raw-loader --dev
